@@ -262,6 +262,7 @@ public final class FancyHelperReloadService extends JavaPlugin {
         }
     }
 
+    @SuppressWarnings("unchecked")
     private void cleanupServerPluginProviderStorage(Object paperPluginManager, String pluginName) {
         try {
             Field entrypointHandlerField = paperPluginManager.getClass().getDeclaredField("entrypointHandler");
